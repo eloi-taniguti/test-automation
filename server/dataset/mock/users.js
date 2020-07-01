@@ -16,6 +16,12 @@ const users = [
         photo: '',
         uid: 3333,
         role: 'senior'
+    },
+    {
+        name: 'Test User',
+        photo: '',
+        uid: 4444,
+        role: 'admin'
     }
 ];
 

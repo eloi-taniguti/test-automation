@@ -56,6 +56,12 @@ app.post("/sign_in", urlencodedParser, (req, res) => {
                         authenticated = true;
                         console.log("Login successful");
                         break;
+                    case 'admin':
+                        responseText = 'logged';
+                        userAuth = 3;
+                        authenticated = true;
+                        console.log("Login successful");
+                        break;     
                     default:
                         responseText = '<span class="error"></span>';
                     }
@@ -86,6 +92,9 @@ app.get('/user', (_, res) => {
                 break;
             case 2:
                 res.json(users[2]);
+                break;
+            case 3:
+                res.json(users[3]);
                 break;
             default:
                 res.sendStatus(401);

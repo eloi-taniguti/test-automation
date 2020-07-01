@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { List } from 'antd';
 
-import classes from './Dashboard.module.scss';
+import './Dashboard.css';
 import backgroundImg from '../../../assets/img/home.svg';
 
 function Dashboard({ currentUser }) {
@@ -40,6 +40,13 @@ function Dashboard({ currentUser }) {
         'Finally send an e-mail to RH.'
     ];
 
+    const adminData = [
+        'Automate the Form Items',
+        'Automate Table',
+        'Page Object',
+        'Stub JSON reponse'
+    ];
+
     let dataSource;
     if (role === 'entry') {
         dataSource = entryData;
@@ -47,18 +54,20 @@ function Dashboard({ currentUser }) {
         dataSource = midData;
     } else if (role === 'senior') {
         dataSource = seniorData;
-    };
+    } else if (role === 'admin') {
+        dataSource = adminData;
+    };;
 
     return (
-        <div className={classes.DashboardContainer}>
-            <div className={classes.BackGroundImg} aria-hidden='true'>
+        <div className='dashboard-container'>
+            <div className='background-img' aria-hidden='true'>
                 <img src={backgroundImg} alt=''></img>
             </div>
-            <div className={classes.Welcome}>
+            <div className='welcome'>
                 <h1>Hi, {name}</h1>
             </div>
-            <h1>Good Luck !!!</h1>
-                <div className={classes.Text}>
+            <h2>Good Luck !!!</h2>
+                <div className='text'>
                     <List
                         header={<div>Your challenge is:</div>}
                         bordered
