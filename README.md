@@ -1,4 +1,4 @@
-# ghDS - Template project
+# Test Automation project
 
 
 # Start dev environment
