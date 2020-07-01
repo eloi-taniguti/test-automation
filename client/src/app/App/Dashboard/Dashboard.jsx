@@ -12,39 +12,35 @@ function Dashboard({ currentUser }) {
     const entryData = [
         'Write as many tests as possible.',
         'Organize them in the best way you see fit.',
-        'In case you have found any Bugs, create a BUG report for them separately and attach to HackerRank',
-        'When ready, compact your tests and upload it to HackerRank',
-        'And send an e-mail to RH.'
+        'In case you have found any Bugs, create a BUG report for them separately',
+        'When ready, compact your tests and upload it to HackerRank'
     ];
 
     const midData = [
         'Choose any framework of your preference to develop the automated UI tests.',
         'Organize them in the best way you see fit.',
         'NOTE: Unit tests are not required.',
-        'When ready, create a new branch with your name and, then push to this repository.',
-        'Or compact your tests and upload it to HackerRank',
-        'In case you have found any Bugs, create a BUG report for them separately and attach to HackerRank',
-        'Finally send an e-mail to RH.'
+        'Optional: Include a component that generates a Test Report',
+        'In case you have found any Bugs, create a BUG report for them separately',
+        'When ready, compact your tests and upload it to HackerRank'
     ];
 
     const seniorData = [
         'Choose any framework of your preference to develop the automated UI tests.',
         'Organize them in the best way you see fit.',
         'Integrate the automated tests to this project.',
-        'Create an example file to run the automated tests in any CI tool',
-        'Optional: Include a component that generates a Test Report',
+        'Include a component that generates a Test Report',
         'NOTE: Unit tests are not required.',
-        'When ready, create a new branch with your name and, then push to this repository.',
-        'Or compact your tests and upload it to HackerRank',
-        'In case you have found any Bugs, create a BUG report for them separately and attach to HackerRank',
-        'Finally send an e-mail to RH.'
+        'Optional: Create an example file to run the automated tests in any CI tool',
+        'In case you have found any Bugs, create a BUG report for them separately',
+        'When ready, compact this project and upload it to HackerRank'
     ];
 
     const adminData = [
         'Automate the Form Items',
         'Automate Table',
         'Page Object',
-        'Stub JSON reponse'
+        'Stub JSON response'
     ];
 
     let dataSource;
