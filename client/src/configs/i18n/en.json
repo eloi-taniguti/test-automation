@@ -1,0 +1,34 @@
+{
+    "translation": {
+        "header": {
+            "title": "Test Automation"
+        },
+        "footer": {
+            "main": "© {{year}} Venturus. All rights reserved",
+            "venturus": "Venturus",
+            "support": "Support"
+        },
+        "not_found": {
+            "title": "Page Not Found",
+            "subtitle": "Oops... it seems like the page you tried to access does not exist."
+        },
+        "sign_in": {
+            "login": "Login with your Account",
+            "failed": "There was a problem logging in: Login/Password is incorrect",
+            "placeholder": {
+                "username": "Username",
+                "password": "Password"
+            },
+            "forgot_link": "Forgot Username and Password?",
+            "login_button": "Log in",
+            "empty_username": "Please input your username.",
+            "empty_password": "Please input your Password."
+        },
+        "general": {
+            "email_support": "eloi.taniguti@venturus.org.br",
+            "user_preference": "Preferences",
+            "help": "Help",
+            "sign_out": "Logout"
+        }
+    }
+}

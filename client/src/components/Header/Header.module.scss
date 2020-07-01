@@ -1,0 +1,45 @@
+@import '../../sass/main.scss';
+
+.Header {
+    align-items: center;
+    background-color: rgba($color-black, 0.8);
+    color: $color-white;
+    display: flex;
+    height: $header-height;
+    width: 100%;
+
+    .Logo {
+        width: 3rem;
+        height: 3rem;
+        margin-left: 2rem;
+    }
+
+    .Title {
+        padding-left: 2rem;
+        font-weight: normal;
+        font-size: 2rem;
+    }
+
+    a {
+        color: $color-alabaster-2;
+        &:hover {
+            color: $color-alabaster-2;
+        }
+    }
+
+    > *:last-child {
+        margin-left: auto;
+        margin-right: 2rem;
+    }
+}
+
+.Navigation {
+    align-items: center;
+    height: 100%;
+    margin-left: 4rem;
+}
+
+.CurrentUser {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,17 @@
+@import '~antd/dist/antd.css';
+
+.ant-popover-arrow {
+  -webkit-box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.06);
+  border-bottom-color: transparent;
+  border-left-color: white;
+  border-right-color: transparent;
+  border-top-color: white;
+  box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.06);
+  right: 16px;
+  top: -4px;
+}
+
+.ant-breadcrumb {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}

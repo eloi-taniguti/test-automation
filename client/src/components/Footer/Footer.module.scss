@@ -1,0 +1,26 @@
+@import '../../sass/main.scss';
+
+.Footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $color-alabaster-2;
+    box-shadow: 0 -.2rem .4rem 0 $color-shadow-rgba;
+    height: $footer-height;
+    padding: 0 2rem;
+    color: $color-dusty-gray;
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    text-align: center;
+    position: relative;
+
+    a {
+        color: $color-azure-radiance;
+    }
+}
+
+.Logo {
+    width: 3rem;
+    height: 3rem;
+    padding-right: .3rem;
+}

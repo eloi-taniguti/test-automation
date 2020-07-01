@@ -1,0 +1,16 @@
+@import '_variables.scss';
+
+@keyframes fade_new_item {
+  from {
+    background: $color-onahau;
+  }
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    50% { opacity: .5; }
+    100% { opacity: 1; }
+  }

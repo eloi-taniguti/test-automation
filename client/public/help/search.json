@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Frequently Asked Questions",
+    "section": "link2",
+    "description": "",
+    "url": "/help/link2/faq.html",
+    "content": "Who can access link2 page ?  Step 1  Step 2  Step 3"
+  },
+  {
+    "title": "Frequently Asked Questions",
+    "section": "link1",
+    "description": "",
+    "url": "/help/link1/faq.html",
+    "content": "Who can access link1 page ?  Step 1  Step 2  Step 3"
+  },
+  {},
+  {},
+  {},
+  {},
+  {
+    "title": "Page Template",
+    "section": "link1",
+    "description": "",
+    "url": "/help/link1/template.html",
+    "content": "This is an example on how to add an image to the help page:  ![Template-Img](../images/content/icons/edit.png)  Text examples:  **BOLD TEXT**  *ITALIC TEXT*  Link to another page:[Module FAQ page](../modules/faq.html)  E-mail link:  E-mail "
+  },
+  {
+    "title": "Page Template",
+    "section": "link2",
+    "description": "",
+    "url": "/help/link2/template.html",
+    "content": "This is an example on how to add an image to the help page:  ![Template-Img](../images/content/icons/edit.png)  Text examples:  **BOLD TEXT**  *ITALIC TEXT*  Link to another page:[Organizations FAQ page](../organizations/faq.html)  E-mail link:  E-mail "
+  }
+]

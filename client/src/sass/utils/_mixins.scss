@@ -1,0 +1,181 @@
+@import './variables.scss';
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px
+*/
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 37.5em) { @content }; // 600px
+    }
+    @if $breakpoint == tab-port {
+        @media (max-width: 56.25em) { @content }; // 900px
+    }
+    @if $breakpoint == tab-land {
+        @media (max-width: 75em) { @content }; // 1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media (min-width: 112.5em) { @content }; // 1800px
+    }
+}
+
+@mixin tableHeaderFixed {
+    position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        background-color: white;
+}
+
+@mixin disabledButton {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+@mixin disabledInput {
+    background-color: $color-gray-95;
+    border-color: $color-gray-60;
+    outline: 0;
+}
+
+@mixin inputError {
+    &, &:hover, &:focus {
+        border-color: $color-red;
+        background-color: rgba($color-red-orange, 0.05);
+    }
+}
+
+@mixin inputErrorMessage {
+    color: $color-red;
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    margin-top: .3rem;
+}
+
+@mixin validationMessage {
+    color: $color-red-ribbon;
+    display: block;
+    font-size: 1.0rem;
+    font-style: italic;
+    font-weight: normal;
+    height:1.5rem;
+}
+
+@mixin inputBorder {
+    border: .1rem solid $field-border-color;
+    border-radius: .3rem;
+    
+    &:hover {
+        border-color: $field-border-color;
+    }
+
+    &:focus {
+        border-color: $field-border-color-focus;
+    }
+}
+
+@mixin defaultInputStyle {
+    @include inputBorder;
+    background-color: $color-white;
+	font-size: $form-fields-fontsize;
+    height: $field-height;
+	outline: none;
+	padding: 0 .7rem;
+    width: 100%;
+
+	&.InputError {
+		@include inputError;
+    }
+
+	&.Text {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+		height: 1.7rem;
+        outline: none;
+        padding: 0;
+        pointer-events: none;
+    }
+}
+
+@mixin multiLineEllipsis($lineHeight: 1.2em, $lineCount: 1, $bgColor: $color-white) {
+    overflow: hidden;
+    position: relative;
+    line-height: $lineHeight;
+    max-height: $lineHeight * $lineCount;
+    text-align: justify;
+    margin-right: -1em;
+    padding-right: 1em;
+    &:before {
+      content: '...';
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background: $bgColor;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      width: 1rem;
+      height: 1rem;
+      margin-top: 0.2rem;
+      background: $bgColor;
+    }
+  }
+
+@mixin fieldPlaceholder {
+    color: $color-mine-shaft;
+    opacity: 0.3;
+    font-size: $form-fields-fontsize;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+@mixin searchPlaceholder($iconUrl:'../../../assets/icons/search.svg'){
+    @include fieldPlaceholder;
+    background: url($iconUrl) no-repeat;
+    background-position: left center;
+    background-size: 1.1rem;
+    padding-left: 1.8rem;
+}
+
+@mixin toggableContainer {
+    background-color: $color-white;
+    border-radius: 0.5rem;
+    border: 0.1rem solid rgba(0,0,0,0);
+    box-shadow: 0 0 1.5rem $color-black-opacity-19;
+
+    &:after {
+        content: "";
+        position: absolute;
+        background-color: $color-white;
+        box-shadow:-0.1rem 0.1rem 0.1rem 0rem $color-black-opacity-10;
+        border:none;
+        transform-origin: 0 0;
+        transform: rotate(135deg);
+    }
+}
+
+@mixin alignGenericListTop {
+    :global [class*=GenericList] {
+        align-items: flex-start;
+
+        :global [class*="GenericList_TooltipContainer"] {
+            > span { 
+                flex-direction: unset;
+             }
+        }
+    }
+}
+
+@mixin modalTitleRedMessage {
+    font-size:1.1rem;
+    color: $color-red;
+    font-style: italic;
+    font-weight: normal;
+    float: right;
+}

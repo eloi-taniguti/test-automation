@@ -1,0 +1,14 @@
+@import '../../sass/main.scss';
+
+.Avatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .Initials {
+        text-transform: uppercase;
+        color: $color-black;
+        background-color: $color-alto;
+        font-size: 1.8rem;
+    }
+}

@@ -1,0 +1,34 @@
+/****** Styles below are used for secondary navigation such as admin/activities pages. *****/
+%secondary-navigation {
+    border-bottom: .1rem solid $color-mercury;
+    display: flex;
+    font-size: 1.4rem;
+    min-height: $secondary-nav-height;
+    padding-left: 2rem;
+    width: 100%;
+}
+
+%secondary-navigation-item {
+    display: flex;
+    align-items: center;
+    height: $secondary-nav-height;
+    color: $color-mine-shaft;
+    letter-spacing: 0;
+    &:hover {
+        color: $color-azure-radiance;
+        border-bottom: .1rem solid $color-azure-radiance;
+    }
+    &:not(:last-child) {
+        margin-right: 2rem;
+    }
+    &:focus{
+        text-decoration: none;
+    }
+}
+
+%secondary-active-navigation-item {
+    letter-spacing: 0;
+    color: $color-azure-radiance;
+    border-bottom: .1rem solid $color-azure-radiance;
+}
+/*******************************************************************************************/

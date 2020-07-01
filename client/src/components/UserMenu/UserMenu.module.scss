@@ -1,0 +1,36 @@
+@import '../../sass/main.scss';
+
+.UserMenu {
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    background-color: $color-mine-shaft;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+
+    .Name {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0.5rem;
+        align-items: flex-start;
+        color: $color-white;
+    }
+
+    .MenuArrowUp {
+        color: $color-white;
+        margin-left: 0.6rem;
+        svg {
+            transform: rotate(180deg);
+            transition: transform 0.3s, -webkit-transform 0.3s;
+        }
+    }
+
+    .MenuArrowDown {
+        color: $color-white;
+        margin-left: 0.6rem;
+        svg {
+            transition: transform 0.3s, -webkit-transform 0.3s;
+        }
+    }
+}

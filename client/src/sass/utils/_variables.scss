@@ -1,0 +1,122 @@
+//--------------------//
+//     MEASUREMENT    //
+//--------------------//
+$message-enviroment-height:4rem;
+$notification-height: 3.2rem;
+$header-height: 4.8rem;
+$footer-height: 3.7rem;
+$secondary-nav-height: 4.8rem;
+$crud-tools-height: 4.5rem;
+$side-modal-header-height: 6rem;
+$crud-modal-header-height: 4.6rem;
+$crud-modal-footer-height: 7.8rem;
+$engineer-filter-options-height: 15rem;
+$invoice-list-tools-height: 7rem;
+$report-activity-slider-height: auto;
+$week-picker-content-height: 6.6rem;
+$quarter-picker-content-height: 6.6rem;
+$travel-toolbar-height: 9.3rem;
+$form-fields-fontsize: 1.4rem;
+
+//--------------------//
+//       COLORS       //
+//--------------------//
+
+// Shades of black
+$color-black: #000;
+$color-mine-shaft: #333333;
+$color-black-opacity-19: rgba(0,0,0,0.19);
+$color-black-opacity-10: rgba(0,0,0,0.10);
+
+// Shades of grey
+$color-dark-gray: #AAAAAA;
+$color-dove-gray: #666666;
+$color-dusty-gray: #999999;
+$color-dusty-gray-50: #80999999; //alpha 0.50
+$color-dusty-gray-40: #66999999; //alpha 0.40
+$color-dusty-gray-30: #6D7278;
+
+$color-alto: #D6D6D6;
+$color-alto-8: #D8D8D8;
+$color-mercury: #E3E3E3;
+$color-gray-95: #F2F2F2;
+$color-clear-gray: #F0F0F0;
+$color-gray-60: #E6E6E6;
+$color-gray-80: #CCCCCC;
+$color-gray-90: #E9E9E9;
+
+// Shades of white
+$color-white: #FFF;
+$color-alabaster: #F8F8F8;
+$color-alabaster-2: #FAFAFA;
+$color-selectors-s2-hover-border: #888888;
+
+
+// Shades of blue
+$color-endeavour: #0055B3;
+$color-azure-radiance: #007AFF;
+$color-blue-mid:  #83C0FD;
+$color-onahau:  #CBE4FF;
+$blue-light: #F2F8FF;
+$blue-over: #D2E8FF;
+
+// Shades of red
+$color-red-ribbon: #DD0040;
+$color-red: #E30C00;
+$color-red-orange: #FF3B30;
+$color-radical-red: #FF2A68;
+
+// Shades of green
+$color-emerald: #4CD964;
+$color-forest-green: #26B33E;
+
+// Shades of yellow
+$color-supernova: #FFCC00;
+$color-pirate-gold: #B38F00;
+
+// Shades of orange
+$color-pizazz: #FF9500;
+$color-indochine: #B36800;
+$color-orange-light: #FF9502;
+
+// Messages
+$notifications: (
+    'dev': transparentize(#FFC440, .2)
+);
+
+// Basic Elements Color
+$border-base-color: $color-alto;
+$field-border-color: $border-base-color;
+$field-border-color-focus: $color-azure-radiance;
+
+// Basic Elements Measures
+$field-height: 3.8rem;
+$button-radius: .3rem;
+$button-height: $field-height;
+
+// Table:
+$td-background-red: #FEEFEF;
+
+// Profile
+$size-image-profile: 7rem;
+
+// Filter
+$size-filter: 36rem;
+
+// Shadow
+$color-shadow-rgba: RGBA(0,0,0,0.08);
+$color-shadow-rgba-card: RGBA(0,0,0,0.23);
+
+//--------------------//
+//       Z-INDEX      //
+//--------------------//
+$admin-z-index: QuarterSelected, InvoiceHeader, FilterOkToPay, Slider, react-table-tr-resizer, list-picker__menu, Avatar, SideModal, file-drag, rt-thead-table, table-overlap, PopoverClass, Loading, Popover, Modal;
+
+// Badges
+$badge-green:$color-emerald;
+$badge-orange: $color-pizazz;
+$badge-gray:$color-dusty-gray;
+$badge-red: $color-red-orange;
+$badge-blue: $color-azure-radiance;
+
+

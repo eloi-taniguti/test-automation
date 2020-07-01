@@ -1,0 +1,54 @@
+@import '../../sass/main.scss';
+
+.Navigation {
+    display: flex;
+    height: 100%;
+    font-size: 1.4rem;
+}
+
+.NavItem {
+    align-items: center;
+    border-bottom: .5rem solid transparent;
+    color: $color-alabaster-2;
+    display: flex;
+    height: 100%;
+    padding: .4rem;
+
+    span {
+        margin-top: 1rem;
+    }
+
+    &:hover {
+        color: $color-alabaster-2;
+
+        span {
+            opacity: 0.6;
+        }
+    }
+    &:not(:last-child) {
+        margin-right: 3.6rem;
+    }
+    &:focus{
+        text-decoration: none;
+    }
+}
+
+.ActiveNavItem {
+    border-color: $color-azure-radiance;
+    color:  $color-white;
+
+    span {
+        opacity: 0.6;
+    }
+
+    &:link,
+    &:visited
+    &:hover,
+    &:active {
+        color:  $color-white;
+
+        span {
+            opacity: 0.6;
+        }
+    }
+}
