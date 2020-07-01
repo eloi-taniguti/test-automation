@@ -1,0 +1,42 @@
+{
+    "extends": [
+        "airbnb",
+        "prettier",
+        "prettier/react",
+        "plugin:jest/recommended"
+    ],
+    "plugins": ["prettier", "jest"],
+    "rules": {
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [".js", ".jsx"]
+            }
+        ],
+        "no-shadow": "off",
+        "react/prop-types": 0,
+        "no-underscore-dangle": 0,
+        "import/imports-first": ["error", "absolute-first"],
+        "import/newline-after-import": "error",
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": ["**/*.test.js", "**/setupTests.js"]
+            }
+        ]
+    },
+    "env": {
+        "jest/globals": true
+    },
+    "globals": {
+        "window": true,
+        "document": true,
+        "navigator": true,
+        "FormData": true,
+        "shallow": true,
+        "render": true,
+        "mount": true,
+        "MouseEvent": true
+    },
+    "parser": "babel-eslint"
+}

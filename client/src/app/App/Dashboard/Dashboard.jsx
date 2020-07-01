@@ -9,10 +9,6 @@ import backgroundImg from '../../../assets/img/home.svg';
 function Dashboard({ currentUser }) {
     const { name, role } = currentUser || '';
 
-    const isEntry = role === 'entry';
-    const isMid = role === 'mid';
-    const isSenior = role === 'senior';
-
     const entryData = [
         'Write as many tests as possible.',
         'Organize them in the best way you see fit.',
@@ -44,6 +40,15 @@ function Dashboard({ currentUser }) {
         'Finally send an e-mail to RH.'
     ];
 
+    let dataSource;
+    if (role === 'entry') {
+        dataSource = entryData;
+    } else if (role === 'mid') {
+        dataSource = midData;
+    } else if (role === 'senior') {
+        dataSource = seniorData;
+    };
+
     return (
         <div className={classes.DashboardContainer}>
             <div className={classes.BackGroundImg} aria-hidden='true'>
@@ -57,7 +62,7 @@ function Dashboard({ currentUser }) {
                     <List
                         header={<div>Your challenge is:</div>}
                         bordered
-                        dataSource={isEntry ? entryData : isMid ? midData : isSenior ? seniorData : ''}
+                        dataSource={dataSource}
                         renderItem={item => <List.Item>{item}</List.Item>}
                     />
                 </div>

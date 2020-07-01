@@ -27,7 +27,6 @@ function Page2() {
 
   const [sliderValue, setSlider] = useState(1);
   const onChangeSlider = (value) => {
-    console.log(value);
     setSlider(value);
   };
 

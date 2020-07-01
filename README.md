@@ -29,3 +29,6 @@
     cd client
     npm start
     ~~~~
+
+* Open the application
+    * http://localhost:3000/

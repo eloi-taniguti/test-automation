@@ -42,16 +42,19 @@ app.post("/sign_in", urlencodedParser, (req, res) => {
                         responseText = 'logged';
                         userAuth = 0;
                         authenticated = true;
+                        console.log("Login successful");
                         break;
                     case 'pl123':
                         responseText = 'logged';
                         userAuth = 1;
                         authenticated = true;
+                        console.log("Login successful");
                         break;
                     case 'sr123':
                         responseText = 'logged';
                         userAuth = 2;
                         authenticated = true;
+                        console.log("Login successful");
                         break;
                     default:
                         responseText = '<span class="error"></span>';
