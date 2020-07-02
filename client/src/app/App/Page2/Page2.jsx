@@ -24,10 +24,22 @@ function Page2() {
   const onChange = (e) => {
     setFormLayout(e.target.value);
   };
+  const formItemLayout =
+    formLayout === 'horizontal'
+      ? {
+          labelCol: { span: 4 },
+          wrapperCol: { span: 14 },
+        }
+      : null;
 
   const [sliderValue, setSlider] = useState(1);
   const onChangeSlider = (value) => {
     setSlider(value);
+  };
+
+  const [switchDisabled, setSwitchDisabled] = useState(false);
+  const onChangeSwitch = (value) => {
+    setSwitchDisabled(value);
   };
 
   return (
@@ -36,26 +48,21 @@ function Page2() {
         <img src={backgroundImg} alt=''></img>
       </div>
       <h1 className={classes.Title}>Form Items</h1>    
-      <Form
-        labelCol={{
-          span: 4,
-        }}
-        wrapperCol={{
-          span: 14,
-        }}
-        layout={formLayout}
-      >
-        <Form.Item label="Radio Button">
+      <Form layout={formLayout}>
+        <Form.Item label="Radio Button" {...formItemLayout}>
           <Radio.Group onChange={onChange} defaultValue="horizontal">
             <Radio.Button value="horizontal">Horizontal</Radio.Button>
             <Radio.Button value="vertical">Vertical</Radio.Button>
             <Radio.Button value="inline">In line</Radio.Button>
           </Radio.Group>
         </Form.Item>
-        <Form.Item label="Input">
-          <Input allowClear />
+        <Form.Item label="Input" {...formItemLayout}>
+          <Input 
+            allowClear
+            placeholder="Only letters and numbers are allowed"
+          />
         </Form.Item>
-        <Form.Item label="Select">
+        <Form.Item label="Select" {...formItemLayout}>
           <Select
               allowClear
               showSearch
@@ -84,8 +91,9 @@ function Page2() {
               <Option value="usa">United States</Option>
           </Select>
         </Form.Item>
-        <Form.Item label="TreeSelect">
+        <Form.Item label="TreeSelect" {...formItemLayout}>
           <TreeSelect
+            allowClear
             treeData={[
               {
                 title: 'Color',
@@ -108,12 +116,12 @@ function Page2() {
             ]}
           />
         </Form.Item>
-        <Form.Item label="Cascader">
+        <Form.Item label="Cascader" {...formItemLayout}>
           <Cascader
             options={[
               {
                 value: 'sp',
-                label: 'Sao Paulo',
+                label: 'São Paulo',
                 children: [
                   {
                     value: 'city_cps',
@@ -121,17 +129,17 @@ function Page2() {
                   },
                   {
                     value: 'city_sp',
-                    label: 'Sao Paulo',
+                    label: 'São Paulo',
                   },
                 ],
               },
             ]}
           />
         </Form.Item>
-        <Form.Item label="DatePicker">
+        <Form.Item label="DatePicker" {...formItemLayout}>
           <DatePicker />
         </Form.Item>
-        <Form.Item label="Slider with InputNumber">
+        <Form.Item label="Slider with InputNumber" {...formItemLayout}>
           <Slider
               min={1}
               max={20}
@@ -145,10 +153,13 @@ function Page2() {
               onChange={onChangeSlider}
           />
         </Form.Item>
-        <Form.Item label="Switch">
-          <Switch />
+        <Form.Item label="Switch" {...formItemLayout}>
+          <Switch 
+            disabled={switchDisabled}
+            onChange={onChangeSwitch}
+          />
         </Form.Item>
-        <Form.Item label="TextArea">
+        <Form.Item label="TextArea" {...formItemLayout}>
           <TextArea placeholder="write a comment" className={classes.TextArea}/>
         </Form.Item>
       </Form>
