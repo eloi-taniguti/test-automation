@@ -6,7 +6,7 @@
 * Requirements
     * node v10.13.0
 
-1. Install dependencies - on project root folder:
+1. Install dependencies. On project root folder run both commands in sequence:
     ~~~~
     npm install
     npm run install-all
