@@ -3,14 +3,15 @@ import axios from 'axios';
 import { Table } from 'antd';
 
 import classes from './Page1.module.scss';
-
+import endPoints from '../../../configs/endpoints';
 import backgroundImg from '../../../assets/img/home.svg';
  
 const columns = [
   {
       title: 'Name',
       dataIndex: 'name',
-  },
+      sorter: (a, b) => a.name.localeCompare(b.name),
+      sortDirections: ['descend', 'ascend'],  },
   {
       title: 'Borrow',
       dataIndex: 'borrow',
@@ -27,7 +28,7 @@ function Page1() {
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios(
-        'http://localhost:4000/page1'
+        endPoints.page1
       );
  
       setData(result.data);

@@ -4,5 +4,6 @@ export default Object.freeze({
     currentUser: `${host}/user`,
     dashboards: `${host}/dashboards`,
     signIn: `${host}/sign_in`,
-    signOut: `${host}/sign_out`
+    signOut: `${host}/sign_out`,
+    page1: `${host}/page1`
 });
