@@ -12,8 +12,7 @@ function Dashboard({ currentUser }) {
     const entryData = [
         'Write as many tests as possible.',
         'Organize them in the best way you see fit.',
-        'In case you have found any Bugs, create a BUG report for them separately',
-        'When ready, compact your tests and upload it to HackerRank'
+        'In case you have found any Bugs, create a BUG report for them separately'
     ];
 
     const midData = [
@@ -21,8 +20,8 @@ function Dashboard({ currentUser }) {
         'Organize them in the best way you see fit.',
         'NOTE: Unit tests are not required.',
         'Optional: Include a component that generates a Test Report',
-        'In case you have found any Bugs, create a BUG report for them separately',
-        'When ready, compact your tests and upload it to HackerRank'
+        'In case you have found any Bugs, create a BUG report for them separately and add it to your repository',
+        'When ready, share your repository link to the answer in Kenoby'
     ];
 
     const seniorData = [
@@ -32,8 +31,8 @@ function Dashboard({ currentUser }) {
         'Include a component that generates a Test Report',
         'NOTE: Unit tests are not required.',
         'Optional: Create an example file to run the automated tests in any CI tool',
-        'In case you have found any Bugs, create a BUG report for them separately',
-        'When ready, compact this project and upload it to HackerRank'
+        'In case you have found any Bugs, create a BUG report for them separately and add it to your repository',
+        'When ready, share your repository link to the answer in Kenoby'
     ];
 
     const adminData = [
