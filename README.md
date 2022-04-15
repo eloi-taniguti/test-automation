@@ -4,7 +4,7 @@
 # Start dev environment
 
 * Requirements
-    * node v10.13.0
+    * node v14.19.1
 
 1. Install dependencies. On project root folder run both commands in sequence:
     ~~~~
