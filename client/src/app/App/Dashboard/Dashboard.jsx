@@ -21,18 +21,18 @@ function Dashboard({ currentUser }) {
         'NOTE: Unit tests are not required.',
         'Optional: Include a component that generates a Test Report',
         'In case you have found any Bugs, create a BUG report for them separately and add it to your repository',
-        'When ready, share your repository link to the answer in Kenoby'
+        'When ready, compress the test project folder and upload it to the question.'
     ];
 
     const seniorData = [
         'Choose any framework of your preference to develop the automated UI tests.',
         'Organize them in the best way you see fit.',
         'Integrate the automated tests to this project.',
-        'Include a component that generates a Test Report',
         'NOTE: Unit tests are not required.',
+        'Desired: Include a component that generates a Test Report',
         'Optional: Create an example file to run the automated tests in any CI tool',
         'In case you have found any Bugs, create a BUG report for them separately and add it to your repository',
-        'When ready, share your repository link to the answer in Kenoby'
+        'When ready, compress the test project folder and upload it to the question.'
     ];
 
     const adminData = [
